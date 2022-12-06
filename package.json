@@ -1,0 +1,23 @@
+{
+  "name": "projeto-final-imersaojs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valenthinatemudo/Projeto-Final-ImersaoJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valenthinatemudo/Projeto-Final-ImersaoJS/issues"
+  },
+  "homepage": "https://github.com/valenthinatemudo/Projeto-Final-ImersaoJS#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
