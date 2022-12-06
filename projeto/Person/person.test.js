@@ -11,8 +11,9 @@ describe('Test of class Person', () => {
     expect(
       person.registerPerson(
         'Valenthina',
-        'temudo.valenthina@gmail.com',
-        '123.456.789-00'
+        'teste@reprograma.com.br',
+        '37761514046',
+        '81996758955'
       )
     ).toBe('Successfully registered person');
   });
@@ -21,8 +22,9 @@ describe('Test of class Person', () => {
     expect(() =>
       person.registerPerson(
         'Valenthina',
-        'temudo.valenthina@gmail',
-        '123.456.789'
+        'teste@reprograma.com.br',
+        '3776151406',
+        '11912345678'
       )
     ).toThrow('Registration error, invalid data');
   });
