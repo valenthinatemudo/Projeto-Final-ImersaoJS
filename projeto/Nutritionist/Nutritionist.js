@@ -5,8 +5,11 @@ class Nutritionist extends Person {
   specialty;
   schedule = [];
 
-  constructor(name, email, cpf, telephone, crn, specialty) {
-    super();
+  constructor(name, email, cpf, telephone, crn, specialty, schedule) {
+    super(name, email, cpf, telephone);
+    this.crn = crn;
+    this.specialty = specialty;
+    this.schedule = schedule;
   }
 }
 
