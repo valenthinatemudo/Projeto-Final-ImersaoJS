@@ -4,15 +4,7 @@ class Person {
   #cpf;
   telephone;
 
-  get cpf() {
-    return this.#cpf;
-  }
-
-  set cpf(cpf) {
-    this.#cpf = cpf;
-  }
-
-  registerPerson(name, email, cpf, telephone) {
+  constructor(name, email, cpf, telephone) {
     let cpfRegex =
       /([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/;
     let emailRegex = /^[a-z0-9.]+@[a-z0-9]+.[a-z]+.([a-z]+)?$/i;
@@ -26,10 +18,15 @@ class Person {
       this.email = email;
       this.#cpf = cpf;
       this.telephone = telephone;
-      return 'Successfully registered person';
-    } else {
-      throw new Error('Registration error, invalid data');
     }
+  }
+
+  get cpf() {
+    return this.#cpf;
+  }
+
+  set cpf(cpf) {
+    this.#cpf = cpf;
   }
 }
 
