@@ -1,14 +1,14 @@
 class Patient {
   idPatient;
   name;
-  telephone;
+  phone;
   weight;
   height;
 
-  constructor(idPatient, name, telephone, weight, height) {
+  constructor(idPatient, name, phone, weight, height) {
     this.idPatient = idPatient;
     this.name = name;
-    this.telephone = telephone;
+    this.phone = phone;
     this.weight = weight;
     this.height = height;
   }
@@ -21,6 +21,15 @@ class Patient {
       throw new Error('Id is not filled with numerical value');
     } else {
       return this.idPatient;
+    }
+  }
+
+  validateTelephone(phone) {
+    let phoneRegex = /^(\d{2})\D*(\d{5}|\d{4})\D*(\d{4})$/;
+    if (phoneRegex.test(phone)) {
+      return (this.phone = phone);
+    } else {
+      throw new Error('Phone is not valid');
     }
   }
 }

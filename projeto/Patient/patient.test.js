@@ -17,4 +17,11 @@ describe('Test of class Patient', () => {
       patient.validatePatient();
     }).toThrow('Id is not filled with numerical value');
   });
+
+  test('check if the phone is being filled in correctly', () => {
+    const patient = new Patient();
+    expect(() => {
+      patient.validateTelephone('819967589');
+    }).toThrow('Telephone is not valid');
+  });
 });
