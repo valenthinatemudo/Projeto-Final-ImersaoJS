@@ -1,15 +1,12 @@
-const Person = require('../Person/Person');
-
-class Nutritionist extends Person {
-  crn;
+class Nutritionist extends Appointment {
+  idNutritionist;
+  name;
   specialty;
-  schedule = [];
 
-  constructor(name, email, cpf, telephone, crn, specialty, schedule) {
-    super(name, email, cpf, telephone);
-    this.crn = crn;
+  constructor(idNutritionist, name, specialty) {
+    this.idNutritionist = idNutritionist;
+    this.name = name;
     this.specialty = specialty;
-    this.schedule = schedule;
   }
 }
 

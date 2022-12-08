@@ -1,11 +1,14 @@
-const Person = require('../Person/Person');
-
-class Patient extends Person {
+class Patient {
+  idPatient;
+  name;
+  telephone;
   weight;
   height;
 
-  constructor(name, email, cpf, telephone, weight, height) {
-    super(name, email, cpf, telephone);
+  constructor(idPatient, name, telephone, weight, height) {
+    this.idPatient = idPatient;
+    this.name = name;
+    this.telephone = telephone;
     this.weight = weight;
     this.height = height;
   }
