@@ -23,5 +23,6 @@ class Nutritionist {
 
 module.exports = Nutritionist;
 
-const nutri = new Nutritionist('01', 'ana', 'clinica');
+const nutri = new Nutritionist(1, 'Ana', 'Clínica');
+nutri.validateNutri();
 console.log(nutri);

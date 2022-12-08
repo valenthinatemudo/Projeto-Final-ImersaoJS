@@ -7,10 +7,8 @@ describe('Test of class Nutritionist', () => {
   });
 
   test('it should verify that the registration is made with valid data', () => {
-    const nutri = new Nutritionist('01', 'Ana', 'Clínica');
-    expect(() => {
-      nutri.validateNutri();
-    }).toThrow();
+    const nutri = new Nutritionist(1, 'Ana', 'Clínica');
+    expect(nutri.idNutritionist).toBe(1);
   });
 
   test('it should verify that the registration is made with invalid data', () => {
