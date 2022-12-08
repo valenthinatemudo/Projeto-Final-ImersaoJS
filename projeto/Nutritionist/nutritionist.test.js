@@ -7,15 +7,11 @@ describe('Test of class Nutritionist', () => {
   });
 
   test('it should verify that the registration is made with valid data', () => {
-    const nutri = new Nutritionist(
-      'Valenthina',
-      'teste@reprograma.com.br',
-      '37761514046',
-      '81996758955',
-      '123456',
-      'Clínica',
-      '[09:00, 11:00]'
-    );
+    const nutri = new Nutritionist('01', 'Valenthina', 'Clínica');
     expect(nutri.name).toBe('Valenthina');
+  });
+  test('it should verify that the registration is made with invalid data', () => {
+    const nutri = new Nutritionist('01', 'Valenthina', 'Clínica');
+    expect(nutri.idNutritionist).toBe('2');
   });
 });

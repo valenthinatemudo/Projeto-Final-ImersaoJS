@@ -1,4 +1,4 @@
-class Nutritionist extends Appointment {
+class Nutritionist {
   idNutritionist;
   name;
   specialty;
