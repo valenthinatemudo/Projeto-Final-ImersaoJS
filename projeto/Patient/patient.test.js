@@ -22,6 +22,6 @@ describe('Test of class Patient', () => {
     const patient = new Patient();
     expect(() => {
       patient.validateTelephone('819967589');
-    }).toThrow('Telephone is not valid');
+    }).toThrow('Phone is not valid');
   });
 });
