@@ -60,8 +60,8 @@ npm run test
 
 - `Funcionalidade 1`: Cadastro da nutricionista
 - `Funcionalidade 2`: Cadastro do paciente
-- `Funcionalidade 3`: Criação de uma agenda para a nutricionista para verificar se tem horários disponíveis para a consulta no dia desejado pelo paciente
-- `Funcionalidade 1`: Marcação da consulta
+- `Funcionalidade 3`: Criação de uma agenda para a nutricionista com a finalidade de verificar se tem horários disponíveis para a consulta no dia desejado pelo paciente
+- `Funcionalidade 4`: Marcação da consulta
       
 ## ✔️ **Tecnologias utilizadas**
 
